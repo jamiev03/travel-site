@@ -9,7 +9,11 @@
     }
 
     &__btn-container {
-        float: right;
+
+        @mixin atMedium {
+            float: right; 
+        }
+        
     }
 
     &__logo {
@@ -42,8 +46,15 @@
 
     &__menu-content {
         display: none;
+        padding-top: 100px;
+        text-align: center;
 
         @mixin atMedium {
+            padding-top: 0;
+            display: block;
+        }
+
+        &--is-visible {
             display: block;
         }
     }
