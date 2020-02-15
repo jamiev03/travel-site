@@ -1,4 +1,5 @@
 import '../styles/style.css'
+import Person from './modules/Person'
 
 if(module.hot) {
     module.hot.accept()
@@ -6,16 +7,8 @@ if(module.hot) {
 
 /*Lesson example code */
 
-function Person(fullName, favColor) {
-    this.name = fullName;
-    this.favoriteColor = favColor;
-    this.greet = function () {
-        console.log('Hi there!!!!');
-    }
-}
-
-let joe = new Person('Joey smith', 'orange');
+let joe = new Person('Joey smith', 'orangered');
 joe.greet();
 
-let jane = new Person('Jane thing', 'blue');
+let jane = new Person('Jane thing', 'banana');
 jane.greet();
