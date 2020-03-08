@@ -21,7 +21,17 @@ let config = {
   entry: './app/assets/scripts/App.js',
   module: {
     rules: [
-     cssConfig
+     cssConfig,
+     {
+       test: /\.js$/,
+       exclude: /(node_modules)/,
+       use: {
+         loader: 'babel-loader',
+         options: {
+           presets: ['@babel/preset-react', '@babel/preset-env']
+         }
+       }
+     }
     ]
   }
 }

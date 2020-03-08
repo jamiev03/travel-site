@@ -8,16 +8,19 @@ import StickyHeader from './modules/sticky-header';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-ReactDOM.render(<MyAmazingComponent />, document.querySelector('#my-react-example'))
 
 function MyAmazingComponent() {
     return (
         <div>
-            <h1>This is the React component</h1>
+            <h1 className="section-title section-title--blue">This is the React component</h1>
             <p>Using react in an already made project is not hard at all!</p>
         </div>
     )
 }
+
+ReactDOM.render(<MyAmazingComponent />, document.querySelector('#my-react-example'))
+
+
 
 
 let stickyHeader = new StickyHeader();
