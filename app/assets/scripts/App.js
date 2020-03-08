@@ -10,6 +10,15 @@ import ReactDOM from 'react-dom';
 
 ReactDOM.render(<MyAmazingComponent />, document.querySelector('#my-react-example'))
 
+function MyAmazingComponent() {
+    return (
+        <div>
+            <h1>This is the React component</h1>
+            <p>Using react in an already made project is not hard at all!</p>
+        </div>
+    )
+}
+
 
 let stickyHeader = new StickyHeader();
 let MobileMenu = new mobileMenu();
