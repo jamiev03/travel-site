@@ -4,6 +4,13 @@ import mobileMenu from './modules/mobileMenu';
 import RevealOnScroll from './modules/reveal-on-scroll';
 import StickyHeader from './modules/sticky-header';
 
+// React related code goes here
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(<MyAmazingComponent />, document.querySelector('#my-react-example'))
+
+
 let stickyHeader = new StickyHeader();
 let MobileMenu = new mobileMenu();
 new RevealOnScroll(document.querySelectorAll('.feature-item'), 75);
